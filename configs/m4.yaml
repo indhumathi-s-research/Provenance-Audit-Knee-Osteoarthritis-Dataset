@@ -1,0 +1,24 @@
+experiment:
+  id: M4
+  name: standard_cnn_224_clahe
+  seed: 42
+  description: "Standard CNN at 224x224 with CLAHE contrast enhancement"
+
+preprocessing:
+  image_size: [224, 224]
+  contrast: clahe
+  clahe_clip: 2.0
+  clahe_grid: [8, 8]
+  normalize: raw
+
+model:
+  architecture: standard_cnn
+  pretrained: false
+  dropout: 0.3
+
+training:
+  batch_size: 32
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  augmentation: light

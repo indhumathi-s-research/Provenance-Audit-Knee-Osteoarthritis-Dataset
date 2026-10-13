@@ -1,0 +1,25 @@
+experiment:
+  id: M6
+  name: resnet18_pretrained_224_clahe
+  seed: 42
+  description: "Strong manual configuration: ImageNet-pretrained ResNet-18, 224x224, CLAHE"
+
+preprocessing:
+  image_size: [224, 224]
+  contrast: clahe
+  clahe_clip: 2.0
+  clahe_grid: [8, 8]
+  normalize: imagenet
+
+model:
+  architecture: resnet18
+  pretrained: true
+  dropout: 0.2
+  num_classes: 5
+
+training:
+  batch_size: 32
+  epochs: 30
+  lr: 0.0003
+  weight_decay: 0.0001
+  augmentation: light

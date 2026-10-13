@@ -1,0 +1,22 @@
+experiment:
+  id: M3
+  name: standard_cnn_300
+  seed: 42
+  description: "Standard CNN at 300x300, plain preprocessing (higher resolution)"
+
+preprocessing:
+  image_size: [300, 300]
+  contrast: none
+  normalize: raw
+
+model:
+  architecture: standard_cnn
+  pretrained: false
+  dropout: 0.3
+
+training:
+  batch_size: 16
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  augmentation: light

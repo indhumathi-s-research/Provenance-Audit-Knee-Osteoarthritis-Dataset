@@ -1,0 +1,22 @@
+experiment:
+  id: M1
+  name: light_cnn_224
+  seed: 42
+  description: "Lightweight CNN at 224x224, plain preprocessing"
+
+preprocessing:
+  image_size: [224, 224]
+  contrast: none
+  normalize: raw
+
+model:
+  architecture: light_cnn
+  pretrained: false
+  dropout: 0.2
+
+training:
+  batch_size: 64
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  augmentation: light

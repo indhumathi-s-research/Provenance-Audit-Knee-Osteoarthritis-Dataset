@@ -1,0 +1,22 @@
+experiment:
+  id: M2
+  name: standard_cnn_224
+  seed: 42
+  description: "Standard CNN at 224x224, plain preprocessing"
+
+preprocessing:
+  image_size: [224, 224]
+  contrast: none
+  normalize: raw
+
+model:
+  architecture: standard_cnn
+  pretrained: false
+  dropout: 0.3
+
+training:
+  batch_size: 32
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  augmentation: light

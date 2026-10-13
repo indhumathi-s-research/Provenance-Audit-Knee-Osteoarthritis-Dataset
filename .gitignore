@@ -1,0 +1,32 @@
+# Dataset and derived per-image files (not redistributed)
+data/
+*.zip
+
+# Generated outputs
+runs/
+experiments/
+reports/
+research/
+plots/
+**/checkpoints/
+**/cache/
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS / IDE / tools
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+CLAUDE.md
+
+# Credentials
+.kaggle/
+kaggle.json
