@@ -1,5 +1,7 @@
 # Provenance Audit of a Knee-Osteoarthritis KL-Grading Dataset
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23336954.svg)](https://doi.org/10.5281/zenodo.23336954)
+
 Code accompanying the paper **"A Data-Integrity and Provenance Audit of a Public Knee-Osteoarthritis KL-Grading Dataset"**.
 
 The repository contains the scripts that:
@@ -120,4 +122,17 @@ python scripts/baseline_provenance_stats.py
 
 ## Citation
 
-If you use this code, please cite the paper (citation details will be added on publication) and the archived release of this repository (DOI to be added).
+If you use this code, please cite the paper (citation details will be added on publication) and the archived release of this repository:
+
+> Provenance Audit of a Knee-Osteoarthritis KL-Grading Dataset (code), version 1.0.0. Zenodo. https://doi.org/10.5281/zenodo.23336954
+
+```bibtex
+@software{koa_provenance_audit_code_v1,
+  title     = {Provenance Audit of a Knee-Osteoarthritis KL-Grading Dataset (code)},
+  version   = {v1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23336954},
+  url       = {https://doi.org/10.5281/zenodo.23336954}
+}
+```
